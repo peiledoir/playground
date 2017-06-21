@@ -1,4 +1,5 @@
-// I've had some emails come in saying they couldn't find the confirmation email sent from mailchimp, so am capturing them via a google analytics event.
+// When users can't find the confirmation email sent from mailchimp
+// At least capture the email via a google analytics event, or it'll be lost.
 
 $("button#mc-embedded-subscribe").on('click', function(){
 	var inputVal = $(this).closest('form').find('input.email').val();
